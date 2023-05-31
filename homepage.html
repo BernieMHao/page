@@ -1,0 +1,182 @@
+<!--411770653 李祐豪 5-->
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>電腦主機硬體解析</title>
+</head>
+<body>
+    <ul class="main_select">
+        <li><a href="#mainpage">主頁</a></li>
+        <li><a href="#cpu">處理器CPU</a></li>
+        <li><a href="#mb">主機板Motherboard</a></li>
+        <li><a href="#ram">記憶體RAM</a></li>
+        <li><a href="#gpu">顯示卡GPU</a></li>
+        <li><a href="#psu">電源供應器PSU</a></li>
+    </ul>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="intel_amd.jpg" style="height:400px;">
+          <div class="text">intel和AMD的cpu</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="motherboard.jpg" style="height:400px;">
+          <div class="text">微星主機板</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="ram.jpg" style="height:400px;">
+          <div class="text">美光記憶體</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="gpu.jpg" style="height:400px;">
+            <div class="text">RTX 4090顯示卡</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="psu.jpg" style="height:400px;">
+            <div class="text">電源供應器</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+        
+    </div>
+    <div class="main_photo">
+        <img src="PC_all.jpg" title="電腦主機側面圖"alt="電腦主機側面圖" width="700">
+    </div>
+    <div id="mainpage">
+        <h1>概述</h1>
+        <h2>電腦主機是由很多種零件組成，主要由以下設備構成
+        <ul class="main_paragraph">
+            <li>處理器CPU</li>
+            <li>主機板Mother Board</li>
+            <li>記憶體RAM</li>
+            <li>顯示卡GPU</li>
+            <li>電源供應器PSU</li>
+            <li>機殼</li>
+            <li>風扇</li>
+            <li>其他線材</li>
+        </ul>
+    </div>
+    <div class="huan_photo">
+        <p class="huan_discription">點選下方圖片前往電腦零件配單分析影片</p>
+        <a href="https://youtu.be/p6dfA8YVk_s">
+        <img src="huan.png" title="【Huan】 電腦菜單怎麼配? 分享我的經驗思路 Budget PC Setup Guide"alt="連結電腦相關youtube影片" width="900">
+        </a>
+    </div>
+    <div id="cpu">
+        <span class="title">處理器CPU</span>
+        <div class="photo">
+            <img src="intel_amd.jpg" title="intel與amd的CPU" alt="intel與amd的CPU" width="1000">
+        </div>
+        <p class="cpu_title">這兩家為主要製作CPU的廠商，左邊為<strong>intel</strong>右邊為<strong>Amd</strong>
+            ，他們都各有推出不同等級的CPU供消費者
+        </p>
+        <ul class="cpu_title"><li>上網、文書、看影片的使用者</li></ul>
+        <p class="cpu_paragraph">不必選擇高階CPU，低階的Intel i3或AMD R3即可。<br>
+            (更低階的Pentium或Athlon當然也適合文書，但我建議最低就是i3或R3起跳)</p>
+        <ul class="cpu_title"><li>遊戲玩家、繪圖美工、希望高效能速度快的電腦</li></ul>
+        <p class="cpu_paragraph">建議選擇要中高階的CPU，Intel i5、i7、i9或AMD R5、R7、R9</p>
+        <ul class="cpu_title"><li>超頻玩家則必須選擇可超頻的cpu及可超頻主機板</li></ul>
+        <p class="photo_discription">以下為使用需求及推薦的CPU</p>
+        <div class="photo">
+            <img src="cpu_level.jpg" title="cpu選擇" alt="cpu選擇圖" width="800">
+        </div>
+    </div>
+    <div id="mb">
+        <span class="title">主機板Mother Board</span>
+        <div class="photo">
+            <img src="motherboard.jpg" title="主機板" alt="主機板" width="800">
+        </div>
+        <p class="cpu_paragraph">主機板（英語：Motherboard, Mainboard，簡稱Mobo）；
+            又稱主板、系統板、邏輯板(logic board)、母板、底板等，是構成複雜電子系統例如電子計算機的中心或者主電路板。</p>
+        <p class="gpu_list">不同的CPU會搭配不同的主機板，不能混插。你要先決定用哪一顆CPU，再來決定用哪一張主機板。</p>
+        <p class="cpu_paragraph">晶片等級會隨著CPU而有所不同，以Intel 第八~九代來說就是300系列晶片，
+            第10代是400系列，第11代是500系列，第12代是600系列，例如B660、H670、Z690。</p>
+        <p class="cpu_paragraph">晶片等級越高，效能及擴充性會越好，請看以下說明。</p>
+        <p class="cpu_paragraph">以Intel晶片組為例：低到高H610&lt;B660&lt;H670&lt;Z690<br>
+            ▎H610 (低階)：i3文書機<br>
+            ▎B660 (中階)：i5遊戲、繪圖機<br>
+            ▎H670 (高階)：i7遊戲、繪圖機<br>
+            ▎Z690 (高階)：i7遊戲、繪圖機+可超頻</p>
+    </div>
+    <div id="ram">
+        <span class="title">記憶體RAM</span>
+        <div class="photo">
+            <img src="ram.jpg" title="記憶體" alt="記憶體" width="800">
+        </div>
+        <p class="cpu_paragraph">主記憶體（Main memory）即電腦內部最主要的記憶體，用來載入各式各樣的程式與資料以供 CPU 直接執行與運用。
+            由於 DRAM 的CP值很高，且擴展性也不錯，是現今一般電腦主記憶體的最主要部分。
+            2011 年生產電腦所用的主記憶體主要是 DDR3 SDRAM，而 2016 年開始 DDR4 SDRAM 逐漸普及化
+            ，筆電廠商開始在筆電以 DDR4 記憶體取代 DDR3L。</p>
+        <p class="cpu_paragraph">如果您是文書需求(上網、打字、看影片)，記憶體4G也能用，
+            但一般來說建議直接一條8G，一勞永逸，也就是說目前記憶體最少就是裝8G以上。<br>
+            如果您是玩遊戲、圖片處理、影片剪輯、美工繪圖，則應選擇單條容量大的記憶體，例如8G*2條=16G 或 16G*2條=32G
+            (目前常見的遊戲繪圖機，記憶體標配最少要16G或32G)</p>
+    </div>
+    <div id="gpu">
+        <span class="title">顯示卡GPU</span>
+        <div class="photo">
+            <img src="gpu.jpg" title="顯示卡" alt="顯示卡" width="800">
+        </div>
+        <p class="cpu_paragraph">顯示卡（英語：video card、display card、graphics card、video adapter，簡稱顯卡）
+            ，是個人電腦最基本組成部分之一，用途是將電腦系統所需要的顯示資訊進行轉換驅動電腦，並提供逐行或隔行掃描訊號
+            ，控制電腦的正確顯示，是連接顯示器和個人電腦主機板的重要元件，是「人機對話」的重要裝置之一。</p>
+        <p class="cpu_title">該選哪個品牌？</p>
+        <p class="cpu_paragraph">在台灣的話，華碩、技嘉、微星和 EVGA 都是不錯的顯卡品牌。</p>
+        <p class="cpu_title"> 依「用途和預算」選擇顯卡等級</p>
+        <p class="cpu_paragraph">顯卡和 CPU 一樣，越新的越好、越好的越貴。畢竟 CPU 和顯卡幾乎決定了極大程度的電腦使用體驗，
+            因此砍任何零件的預算最好都不要砍到 CPU 和顯卡的預算。<br>
+            建議大家，單純上網、文書處理的話就不需要獨顯，使用 CPU 的內顯就夠了；
+            想要玩遊戲或是有繪圖需求的，那就強烈建議購買一張獨顯。至於什麼樣的顯卡等級才足夠，
+            就得根據自己的使用習慣，以及偏好的畫質和遊戲畫面設定來決定。</p>
+        <ul class="gpu_list">
+            <li>上網、文書處理：使用 CPU 的內顯即可</li>
+            <li>主要拿來打遊戲：可以 Google 一下「（遊戲名）建議規格」，按照官方給的建議規格去選就好</li>
+            <li>有繪圖、剪輯需求：3D 渲染圖越多、就需要越高階的顯卡</li>
+        </ul>
+    </div>
+    <div id="psu">
+        <span class="title">電源供應器PSU</span>
+        <div class="photo">
+            <img src="psu.jpg" title="電源供應器" alt="電源供應器" width="800">
+        </div>
+        <p class="cpu_paragraph">供電單元（power supply unit，PSU），又被稱作電源供應器或電源供應單元
+            ，是電能轉換類的電源（有別於電池供電類的電源），主要功能為將標準交流電轉成低壓穩定的直流電
+            ，或直接將直流電轉成低壓穩定的直流電給某些特殊的器材使用。</p>
+        <p class="cpu_title">電供要用幾瓦才夠？</p>
+        <p class="cpu_paragraph">目前常見的瓦數有七種：450W、550W、650W、750W、850W、1000W、1200W</p>
+        <p class="psu_list">推薦瓦數</p>
+        <ul class="psu_list">
+            <li>450W：文書機 (沒有獨顯)</li>
+            <li>550W：遊戲機 (中階顯卡GTX1650)</li>
+            <li>650W：高階顯卡 (GTX1660S、RTX3050、RTX3060)</li>
+            <li>750W~850W：高階顯卡 (RTX3070、RTX3080以上)</li>
+        </ul>
+    </div>
+</body>
+</html>
